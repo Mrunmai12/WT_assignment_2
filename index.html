@@ -1,0 +1,115 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Event Registration Website </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1 style="padding-left: 15px; font-family:Arial, Helvetica, sans-serif;">...</h1>
+                <h5 style="padding-left: 15px;">.
+                <h5 style="padding-left: 15px;">.
+            </div>
+        </header>
+        <nav style="background-image: url('images/bg.jpg'); color: white;">
+            <div onclick="showBlocc('homeDiv')"> Home </div>
+            <div onclick="showBlocc('registerDiv')"> Register </div>
+            <div onclick="showBlocc('registrationDiv')"> Registrations </div>
+        </nav>
+        
+        <br>
+
+        <div id="homeDiv" style="display: block">
+            <h1 style="color: white; text-align: center; text-shadow: 3px 2px black">WELCOME TO CHESS COMPETTION!</h1>
+            <br> <br>
+            <img src="meme1.jpeg">
+            <img src="meme2.jpeg">
+            <img src="meme3.jpeg">
+            <img src="meme4.jpeg">
+            <img src="meme5.jpeg">
+            <br> <br>
+            <h3 style="text-align: center; color: white;">DATE: 14 NOV  TIME: 5PM<br> BLITZ </h3>
+            <h2 style="text-align: center; color: white; text-shadow: 2px 2px 2px #ff0000;">Click on the "Register" button to PARTICIPATE.</h2>
+        </div>
+        
+
+
+
+        <div id="registerDiv" style="display: none">
+            <form id="registerForm"> <p style="color: white; text-align: center;">*(Required fields)</p>
+            	<label style="color: white; text-align: center; padding-left: 20px;"> *NAME: </label> 
+                <input type="text" id="name" style="color: black" placeholder="*Name"    /> 
+                
+                <br>
+                <br>
+                <label style="color: white; text-align: center; padding-left: 20px;"> *EMAIL ID: </label> 
+                <input type="text" id="eid"  style="color: black" placeholder="*Email ID"/> 
+                <br>
+                <br>
+               
+                <label style="color: white; text-align: center;"> 
+                	*Gender: <span class="required"> </span> </label> <br>
+                    <input type="radio" id="male" name="gender" value="Male"> 
+                    <label for="male" style="color: white; text-align: center;"> Male&nbsp; </label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female" style="color: white; text-align: center;"> Female&nbsp; </label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other" style="color: white; text-align: center;"> Other </label>
+                    
+                    <br> <br>
+
+                   
+                 <label style="color: white; text-align: center; padding-left: 20px;"> *CONTACT NUMBER: </label> 
+                <input type="text" id="cno" style="color: black" placeholder="*Contact Number"/>          <br>   
+                <br>
+                
+                 <label style="color: white; text-align: center; padding-left: 20px;"> *COUNTRY: </label> 
+                <input style="color: black" type="text" name="iid" id="iid" placeholder="Country"/> <br><br>  
+              
+                <label style="color: white; text-align: center;"> *RATING </label>
+                <select name="field4" class="field-select" name="category" id="category" style="color: black">
+                  <option value="1000">1000+</option>
+                  <option value="1200">1200+</option>
+                  <option value="1400">1400+</option>
+                  <option value="1600">1600+</option>
+                  <option value="1800">1800+</option>
+                  <option value="2000">2000+</option>
+                  <option value="2200">2200+</option>
+                  <option value="2400">2400+</option>
+                  <option value="2600">2600+</option>
+                </select>
+                              
+                              <br>
+                              <br>
+                              
+                <label style="color: white; text-align: center; padding-left: 20px;"> *AGE: </label> 
+                <input style="color: black" type="text" name="memeLink" id="memeLink" placeholder="AGE"/> <br><br>               
+                
+                <button class="button" type="button" onclick="addRegistration();" style="color: black">Submit </button> <br>
+            </form>
+          
+        </div>
+
+        <div id="registrationDiv" style="display: none"> Registrations 
+            <table id="table">
+                <tr>
+                  <th>Filled on</th>
+                  <th>Name</th>
+                  <th>Email id</th>
+                  <th>Gender</th>
+                  <th>Contact No.</th>
+                  <th>Country</th>
+                  <th>Rating</th>
+                  <th>Age</th>
+                  
+                </tr>          
+            </table>
+        </div>
+        
+    </body>
+</html>
